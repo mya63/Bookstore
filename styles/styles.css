@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: white;
+}
+
+.book-section {
+  background: white;
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 10px;
+  max-width: 500px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.book-img img {
+  width: 100%;
+  max-width: 150px;
+}
+
+.input-line {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+}
+
+@media (max-width: 480px) {
+  .book-section {
+    font-size: 0.95em;
+    padding: 12px;
+  }
+
+  .price-likes {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-line {
+    flex-direction: column;
+  }
+
+  .input-line input[type="text"],
+  .input-line button {
+    width: 100%;
+  }
+}
